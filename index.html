@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>বাংলার কাঁচামাল</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            🌿 বাংলার কাঁচামাল
+        </div>
+
+
+        <nav>
+
+            <a href="#home">হোম</a>
+
+            <a href="#about">আমাদের সম্পর্কে</a>
+
+            <a href="#products">পণ্যসমূহ</a>
+
+            <a href="#gallery">গ্যালারি</a>
+
+            <a href="#order">অর্ডার</a>
+
+            <a href="#contact">যোগাযোগ</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                বাংলার কাঁচামাল
+            </h1>
+
+
+            <p>
+                বাংলাদেশের কৃষকের উৎপাদিত
+                মানসম্মত কাঁচামাল সরাসরি
+                ক্রেতাদের কাছে পৌঁছে দেওয়ার উদ্যোগ।
+            </p>
+
+
+            <a href="#products" class="main-button">
+                আমাদের পণ্য দেখুন
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section">
+
+        <div class="content-box">
+
+            <h2>
+                আমাদের সম্পর্কে
+            </h2>
+
+
+            <p>
+                আমরা বাংলাদেশের বিভিন্ন এলাকার
+                কৃষি ও স্থানীয় কাঁচামাল সংগ্রহ করে
+                ক্রেতাদের কাছে পৌঁছে দেওয়ার একটি উদ্যোগ।
+            </p>
+
+
+            <p>
+                আমাদের লক্ষ্য হলো কৃষক ও ক্রেতার
+                মধ্যে সহজ এবং সরাসরি যোগাযোগ তৈরি করা।
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section id="products" class="section">
+
+        <h2>
+            আমাদের পণ্য
+        </h2>
+
+
+        <div class="products">
+
+
+            <!-- মরিচ -->
+
+            <div class="card">
+
+                <img
+                    src="photo.png"
+                    alt="মরিচ"
+                    class="product-image"
+                >
+
+
+                <h3>
+                    মরিচ
+                </h3>
+
+
+                <p>
+                    দেশীয় মানসম্মত মরিচ।
+                </p>
+
+
+                <div class="price">
+                    ৳ ৬০ টাকা / কেজি
+                </div>
+
+
+                <button
+                    onclick="orderProduct('মরিচ', 60)"
+                >
+                    অর্ডার করুন
+                </button>
+
+            </div>
+
+
+
+            <!-- পেঁয়াজ -->
+
+            <div class="card">
+
+                <img
+                    src="onion.png"
+                    alt="পেঁয়াজ"
+                    class="product-image"
+                >
+
+
+                <h3>
+                    পেঁয়াজ
+                </h3>
+
+
+                <p>
+                    মানসম্মত দেশীয় পেঁয়াজ।
+                </p>
+
+
+                <div class="price">
+                    ৳ ৪০ টাকা / কেজি
+                </div>
+
+
+                <button
+                    onclick="orderProduct('পেঁয়াজ', 40)"
+                >
+                    অর্ডার করুন
+                </button>
+
+            </div>
+
+
+
+            <!-- রসুন -->
+
+            <div class="card">
+
+                <img
+                    src="garlic.png"
+                    alt="রসুন"
+                    class="product-image"
+                >
+
+
+                <h3>
+                    রসুন
+                </h3>
+
+
+                <p>
+                    দেশীয় মানসম্মত রসুন।
+                </p>
+
+
+                <div class="price">
+                    ৳ ৭০ টাকা / কেজি
+                </div>
+
+
+                <button
+                    onclick="orderProduct('রসুন', 70)"
+                >
+                    অর্ডার করুন
+                </button>
+
+            </div>
+
+
+
+            <!-- আদা -->
+
+            <div class="card">
+
+                <img
+                    src="ginger.png"
+                    alt="আদা"
+                    class="product-image"
+                >
+
+
+                <h3>
+                    আদা
+                </h3>
+
+
+                <p>
+                    তাজা ও মানসম্মত আদা।
+                </p>
+
+
+                <div class="price">
+                    ৳ ১২০ টাকা / কেজি
+                </div>
+
+
+                <button
+                    onclick="orderProduct('আদা', 120)"
+                >
+                    অর্ডার করুন
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ORDER ================= -->
+
+    <section id="order" class="section">
+
+        <div class="order-box">
+
+
+            <h2>
+                🛒 অর্ডার করুন
+            </h2>
+
+
+            <p class="order-info">
+                নিচের তথ্যগুলো পূরণ করে WhatsApp-এ অর্ডার পাঠান।
+            </p>
+
+
+
+            <form id="orderForm">
+
+
+                <!-- নাম -->
+
+                <label>
+                    আপনার নাম
+                </label>
+
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="আপনার নাম লিখুন"
+                    required
+                >
+
+
+
+                <!-- মোবাইল -->
+
+                <label>
+                    মোবাইল নম্বর
+                </label>
+
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="01XXXXXXXXX"
+                    required
+                >
+
+
+
+                <!-- পণ্য -->
+
+                <label>
+                    পণ্য নির্বাচন করুন
+                </label>
+
+
+                <select
+                    id="product"
+                    onchange="calculateTotal()"
+                    required
+                >
+
+                    <option value="">
+                        -- পণ্য নির্বাচন করুন --
+                    </option>
+
+
+                    <option value="মরিচ">
+                        মরিচ - ৬০ টাকা/কেজি
+                    </option>
+
+
+                    <option value="পেঁয়াজ">
+                        পেঁয়াজ - ৪০ টাকা/কেজি
+                    </option>
+
+
+                    <option value="রসুন">
+                        রসুন - ৭০ টাকা/কেজি
+                    </option>
+
+
+                    <option value="আদা">
+                        আদা - ১২০ টাকা/কেজি
+                    </option>
+
+                </select>
+
+
+
+                <!-- পরিমাণ -->
+
+                <label>
+                    কত কেজি লাগবে?
+                </label>
+
+
+                <input
+                    type="number"
+                    id="quantity"
+                    min="1"
+                    placeholder="যেমন: 5"
+                    oninput="calculateTotal()"
+                    required
+                >
+
+
+
+                <!-- ঠিকানা -->
+
+                <label>
+                    ডেলিভারি ঠিকানা
+                </label>
+
+
+                <textarea
+                    id="address"
+                    rows="4"
+                    placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন"
+                    required
+                ></textarea>
+
+
+
+                <!-- মোট দাম -->
+
+                <div class="total-box">
+
+                    মোট দাম:
+
+                    <span id="total">
+                        ০
+                    </span>
+
+                    টাকা
+
+                </div>
+
+
+
+                <!-- WhatsApp Button -->
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+
+                    📱 WhatsApp-এ অর্ডার পাঠান
+
+                </button>
+
+
+            </form>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery" class="section">
+
+        <div class="content-box">
+
+
+            <h2>
+                🎥 আমাদের ভিডিও
+            </h2>
+
+
+            <video
+                controls
+                autoplay
+                muted
+                loop
+                class="main-video"
+            >
+
+                <source
+                    src="video.mp4"
+                    type="video/mp4"
+                >
+
+
+                আপনার ব্রাউজার ভিডিও চালাতে পারছে না।
+
+            </video>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section">
+
+        <div class="content-box">
+
+
+            <h2>
+                📞 যোগাযোগ
+            </h2>
+
+
+            <p>
+                আপনার প্রয়োজনীয় কাঁচামালের জন্য
+                আমাদের সাথে যোগাযোগ করুন।
+            </p>
+
+
+            <p>
+                📞 ফোন: 01956092740
+            </p>
+
+
+            <p>
+                📧 ইমেইল: halim.phone077@gmail.com
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 বাংলার কাঁচামাল
+            | সর্বস্বত্ব সংরক্ষিত 
+            Design by SAYEM
+        </p>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+
+        // ===============================
+        // পণ্যের দাম
+        // ===============================
+
+        const prices = {
+
+            "মরিচ": 60,
+
+            "পেঁয়াজ": 40,
+
+            "রসুন": 70,
+
+            "আদা": 120
+
+        };
+
+
+
+        // ===============================
+        // তোমার WhatsApp নম্বর
+        // ===============================
+
+        const whatsappNumber = "8801956092740";
+
+
+
+        // ===============================
+        // অর্ডার বাটনে চাপ দিলে
+        // ===============================
+
+        function orderProduct(product, price) {
+
+
+            document.getElementById("product").value = product;
+
+
+            document.getElementById("quantity").focus();
+
+
+            calculateTotal();
+
+
+            document.getElementById("order")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+
+
+
+        // ===============================
+        // মোট দাম হিসাব
+        // ===============================
+
+        function calculateTotal() {
+
+
+            const product =
+                document.getElementById("product").value;
+
+
+            const quantity =
+                Number(
+                    document.getElementById("quantity").value
+                );
+
+
+
+            if (product && quantity > 0) {
+
+
+                const total =
+                    prices[product] * quantity;
+
+
+                document.getElementById("total")
+                    .innerText = total;
+
+            }
+
+
+            else {
+
+
+                document.getElementById("total")
+                    .innerText = "০";
+
+            }
+
+        }
+
+
+
+        // ===============================
+        // WhatsApp অর্ডার
+        // ===============================
+
+        document.getElementById("orderForm")
+            .addEventListener("submit", function(event) {
+
+
+                event.preventDefault();
+
+
+
+                const name =
+                    document.getElementById("name").value;
+
+
+                const phone =
+                    document.getElementById("phone").value;
+
+
+                const product =
+                    document.getElementById("product").value;
+
+
+                const quantity =
+                    document.getElementById("quantity").value;
+
+
+                const address =
+                    document.getElementById("address").value;
+
+
+
+                const total =
+                    prices[product] * Number(quantity);
+
+
+
+                // WhatsApp message
+
+                const message =
+
+`🛒 নতুন অর্ডার
+
+👤 নাম: ${name}
+
+📱 কাস্টমারের মোবাইল: ${phone}
+
+📦 পণ্য: ${product}
+
+⚖️ পরিমাণ: ${quantity} কেজি
+
+💰 মোট দাম: ${total} টাকা
+
+📍 ডেলিভারি ঠিকানা:
+${address}
+
+বাংলার কাঁচামাল`;
+
+
+
+                // Message URL তৈরি
+
+                const whatsappURL =
+                    "https://wa.me/" +
+                    whatsappNumber +
+                    "?text=" +
+                    encodeURIComponent(message);
+
+
+
+                // WhatsApp খুলবে
+
+                window.open(
+                    whatsappURL,
+                    "_blank"
+                );
+
+
+            });
+
+
+    </script>
+
+
+</body>
+
+</html>
