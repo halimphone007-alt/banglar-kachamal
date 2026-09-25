@@ -7,11 +7,19 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>বাংলার কাঁচামাল</title>
-<meta name="description" content="বাংলার কাঁচামাল — বাংলাদেশের কৃষকের উৎপাদিত মরিচ, পেঁয়াজ, রসুন, আদা ও অন্যান্য কৃষিপণ্য সরবরাহের অনলাইন ওয়েবসাইট।">
+    <title>বাংলার কাঁচামাল | কৃষিপণ্য ও কাঁচামাল সরবরাহ</title>
+
+    <meta name="description"
+        content="বাংলার কাঁচামাল বাংলাদেশের কৃষকের উৎপাদিত মরিচ, পেঁয়াজ, রসুন, আদা ও অন্যান্য কৃষিপণ্য ও কাঁচামাল সরবরাহ করে।">
+
+    <meta name="keywords"
+        content="বাংলার কাঁচামাল, কৃষিপণ্য, কাঁচামাল, মরিচ, পেঁয়াজ, রসুন, আদা, বাংলাদেশের কৃষিপণ্য">
+
+    <meta name="robots" content="index, follow">
+
     <link rel="stylesheet" href="style.css">
 
-<link rel="icon" type="image/png" href="logu.png">
+    <link rel="icon" type="image/png" href="logu.png">
 
 </head>
 
@@ -59,12 +67,9 @@
             </h1>
 
 
-            <p>
-                বাংলাদেশের কৃষকের উৎপাদিত
-                মানসম্মত কাঁচামাল সরাসরি
-                ক্রেতাদের কাছে পৌঁছে দেওয়ার উদ্যোগ।
-            </p>
-
+            <p class="typing-text">
+    <span id="typing"></span><span class="cursor">|</span>
+</p>
 
             <a href="#products" class="main-button">
                 আমাদের পণ্য দেখুন
@@ -143,12 +148,9 @@
                 </div>
 
 
-                <button
-                    onclick="orderProduct('মরিচ', 60)"
-                >
-                    অর্ডার করুন
-                </button>
-
+                <button class="order-button" onclick="orderProduct('মরিচ', 60)">
+    অর্ডার করুন
+</button>
             </div>
 
 
@@ -179,11 +181,7 @@
                 </div>
 
 
-                <button
-                    onclick="orderProduct('পেঁয়াজ', 40)"
-                >
-                    অর্ডার করুন
-                </button>
+                <button class="peyaj-button" onclick="orderProduct('পেঁয়াজ', 40)">অর্ডার করুন</button>
 
             </div>
 
@@ -215,11 +213,8 @@
                 </div>
 
 
-                <button
-                    onclick="orderProduct('রসুন', 70)"
-                >
-                    অর্ডার করুন
-                </button>
+                <button class="roshun-button" onclick="orderProduct('রসুন', 70)">অর্ডার করুন</button>
+
 
             </div>
 
@@ -251,12 +246,7 @@
                 </div>
 
 
-                <button
-                    onclick="orderProduct('আদা', 120)"
-                >
-                    অর্ডার করুন
-                </button>
-
+                <button class="ada-button" onclick="orderProduct('আদা', 120)">অর্ডার করুন</button>
             </div>
 
 
@@ -274,13 +264,27 @@
 
 
             <h2>
-                🛒 অর্ডার করুন
-            </h2>
+    <video class="order-title-video" autoplay muted loop playsinline>
+        <source src="order-video.mp4" type="video/mp4">
+    </video>
+
+    অর্ডার করুন
+
+    <video class="order-title-video" autoplay muted loop playsinline>
+        <source src="order-video.mp4" type="video/mp4">
+    </video>
+</h2>
 
 
-            <p class="order-info">
-                নিচের তথ্যগুলো পূরণ করে WhatsApp-এ অর্ডার পাঠান।
-            </p>
+           <p class="order-info">
+    নিচের তথ্যগুলো পূরণ করে
+
+    <video class="whatsapp-info-video" autoplay muted loop playsinline>
+        <source src="whatsapp.mp4" type="video/mp4">
+    </video>
+
+    WhatsApp-এ অর্ডার পাঠান।
+</p>
 
 
 
@@ -398,29 +402,31 @@
 
                 <div class="total-box">
 
-                    মোট দাম:
+    মোট দাম:
 
-                    <span id="total">
-                        ০
-                    </span>
+    <span id="total">০</span>
 
-                    টাকা
+    টাকা
 
-                </div>
+    <video width="30" height="30" autoplay muted loop playsinline
+        style="border-radius: 50%; object-fit: cover; vertical-align: middle; margin-left: 5px;">
+        <source src="money.mp4" type="video/mp4">
+    </video>
 
+</div>
 
 
                 <!-- WhatsApp Button -->
 
-                <button
-                    type="submit"
-                    class="submit-button"
-                >
+                <button type="submit" class="submit-button">
 
-                    📱 WhatsApp-এ অর্ডার পাঠান
+    <video class="whatsapp-video" autoplay muted loop playsinline>
+        <source src="whatsapp.mp4" type="video/mp4">
+    </video>
 
-                </button>
+    WhatsApp-এ অর্ডার পাঠান
 
+</button>
 
             </form>
 
@@ -438,9 +444,17 @@
         <div class="content-box">
 
 
-            <h2>
-                🎥 আমাদের ভিডিও
-            </h2>
+      <h2>
+    <video class="title-video" autoplay muted loop playsinline>
+        <source src="our-video.mp4" type="video/mp4">
+    </video>
+
+    আমাদের ভিডিও
+
+    <video class="title-video" autoplay muted loop playsinline>
+        <source src="our-video.mp4" type="video/mp4">
+    </video>
+</h2>
 
 
             <video
@@ -476,8 +490,11 @@
 
 
             <h2>
-                📞 যোগাযোগ
-            </h2>
+    <video class="title-video" autoplay muted loop playsinline>
+        <source src="video.png.mp4" type="video/mp4">
+    </video>
+    যোগাযোগ করুন
+</h2>
 
 
             <p>
@@ -487,13 +504,14 @@
 
 
             <p>
-                📞 ফোন: 01956092740
-            </p>
+    <span class="phone-icon">📞</span> ফোন: 01956092740
+</p>
 
 
             <p>
-                📧 ইমেইল: halim.phone077@gmail.com
-            </p>
+    <span class="email-icon">✉</span>
+    ইমেইল: halim.phone077@gmail.com
+</p>
 
 
         </div>
@@ -695,6 +713,65 @@ ${address}
 
 
             });
+            // Typing Animation
+
+const typingTexts = [
+    "বাংলাদেশের কৃষকের উৎপাদিত মানসম্মত কাঁচামাল",
+    "সরাসরি কৃষকের কাছ থেকে কাঁচামাল সংগ্রহ",
+    "বাংলার কাঁচামাল আমরা ক্রেতাদের কাছে পৌঁছে দিই"
+];
+
+let textIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typingAnimation() {
+
+    const typingElement = document.getElementById("typing");
+    const currentText = typingTexts[textIndex];
+
+    if (!deleting) {
+
+        typingElement.textContent =
+            currentText.substring(0, charIndex + 1);
+
+        charIndex++;
+
+        if (charIndex === currentText.length) {
+
+            deleting = true;
+
+            setTimeout(typingAnimation, 1500);
+
+            return;
+        }
+
+    } else {
+
+        typingElement.textContent =
+            currentText.substring(0, charIndex - 1);
+
+        charIndex--;
+
+        if (charIndex === 0) {
+
+            deleting = false;
+
+            textIndex++;
+
+            if (textIndex === typingTexts.length) {
+                textIndex = 0;
+            }
+        }
+    }
+
+    setTimeout(
+        typingAnimation,
+        deleting ? 50 : 90
+    );
+}
+
+typingAnimation();
 
 
     </script>
