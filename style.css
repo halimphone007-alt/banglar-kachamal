@@ -1,700 +1,353 @@
 * {
-
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;
-
 }
-
-
 
 body {
-
     font-family: Arial, sans-serif;
-
     color: #222;
-
     background-image: url("photo.png");
-
     background-size: cover;
-
     background-position: center;
-
     background-attachment: fixed;
-
     background-repeat: no-repeat;
-
 }
-
-
 
 /* Background-এর উপর সাদা পর্দা */
-
 body::before {
-
     content: "";
-
     position: fixed;
-
     top: 0;
-
     left: 0;
-
     width: 100%;
-
     height: 100%;
-
     background: rgba(255, 255, 255, 0.78);
-
     z-index: -1;
-
 }
-
 
 
 /* ================= HEADER ================= */
 
 header {
-
     background-color: #087f23;
-
     color: white;
-
     padding: 18px 7%;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     position: relative;
-
     z-index: 10;
-
 }
-
-
 
 .logo {
-
     font-size: 25px;
-
     font-weight: bold;
-
 }
-
-
 
 nav a {
-
     color: white;
-
     text-decoration: none;
-
     margin-left: 18px;
-
     font-size: 16px;
-
 }
-
-
 
 nav a:hover {
-
     color: #ffe600;
-
 }
-
 
 
 /* ================= HOME ================= */
 
 .hero {
-
     min-height: 480px;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     text-align: center;
-
     padding: 40px 20px;
-
 }
-
-
 
 .hero-content {
-
     max-width: 750px;
-
     background: rgba(255, 255, 255, 0.92);
-
     padding: 45px;
-
     border-radius: 15px;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
-
-
 
 .hero h1 {
-
     color: #087f23;
-
     font-size: 50px;
-
     margin-bottom: 20px;
-
 }
-
-
 
 .hero p {
-
     font-size: 20px;
-
     line-height: 1.7;
-
     margin-bottom: 30px;
-
 }
-
-
 
 .main-button {
-
     display: inline-block;
-
     background-color: #087f23;
-
     color: white;
-
     padding: 14px 28px;
-
     text-decoration: none;
-
     border-radius: 8px;
-
     font-size: 17px;
-
 }
-
-
 
 .main-button:hover {
-
     background-color: #055d19;
-
 }
-
 
 
 /* ================= SECTION ================= */
 
 .section {
-
     padding: 70px 7%;
-
     text-align: center;
-
 }
-
-
 
 .section h2 {
-
     color: #087f23;
-
     font-size: 35px;
-
     margin-bottom: 30px;
-
 }
-
 
 
 /* ================= CONTENT ================= */
 
 .content-box {
-
     max-width: 900px;
-
     margin: auto;
-
-    background: rgba(255,255,255,0.92);
-
+    background: rgba(255, 255, 255, 0.92);
     padding: 40px;
-
     border-radius: 15px;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
-
-
 
 .content-box p {
-
     font-size: 18px;
-
     line-height: 1.8;
-
     margin: 10px;
-
 }
-
 
 
 /* ================= PRODUCTS ================= */
 
 .products {
-
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 25px;
-
     margin-top: 40px;
-
 }
-
-
 
 .card {
-
-    background: rgba(255,255,255,0.95);
-
+    background: rgba(255, 255, 255, 0.95);
     padding: 20px;
-
     border-radius: 15px;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
-
 }
-
-
 
 .card:hover {
-
     transform: translateY(-8px);
-
 }
-
-
 
 .product-image {
-
     width: 100%;
-
     height: 180px;
-
     object-fit: cover;
-
     border-radius: 10px;
-
     margin-bottom: 15px;
-
 }
-
-
 
 .card h3 {
-
     color: #087f23;
-
     font-size: 25px;
-
     margin-bottom: 10px;
-
 }
-
-
 
 .card p {
-
     font-size: 16px;
-
     line-height: 1.6;
-
 }
-
-
 
 .price {
-
     color: #d35400;
-
     font-size: 20px;
-
     font-weight: bold;
-
     margin-top: 15px;
-
 }
-
-
 
 .card button {
-
     margin-top: 20px;
-
     background-color: #087f23;
-
     color: white;
-
     border: none;
-
     padding: 11px 22px;
-
     border-radius: 7px;
-
     cursor: pointer;
-
     font-size: 16px;
-
     transition: 0.3s;
-
 }
-
-
 
 .card button:hover {
-
     background-color: #055d19;
-
     transform: scale(1.05);
-
 }
-
 
 
 /* ================= ORDER ================= */
 
 .order-box {
-
     max-width: 700px;
-
     margin: auto;
-
-    background: rgba(255,255,255,0.96);
-
+    background: rgba(255, 255, 255, 0.96);
     padding: 40px;
-
     border-radius: 18px;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.18);
-
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
     text-align: left;
-
 }
-
-
 
 .order-box h2 {
-
     text-align: center;
-
     margin-bottom: 10px;
-
 }
-
-
 
 .order-info {
-
     text-align: center;
-
     margin-bottom: 30px;
-
     color: #555;
-
 }
-
-
 
 .order-box label {
-
     display: block;
-
     font-size: 17px;
-
     font-weight: bold;
-
     margin-top: 18px;
-
     margin-bottom: 8px;
-
 }
-
-
 
 .order-box input,
-
 .order-box select,
-
 .order-box textarea {
-
     width: 100%;
-
     padding: 13px;
-
     border: 1px solid #ccc;
-
     border-radius: 8px;
-
     font-size: 16px;
-
     outline: none;
-
     background: white;
-
 }
-
-
 
 .order-box input:focus,
-
 .order-box select:focus,
-
 .order-box textarea:focus {
-
     border: 2px solid #087f23;
-
 }
-
-
 
 .order-box textarea {
-
     resize: vertical;
-
 }
-
-
 
 .total-box {
-
     margin-top: 25px;
-
     padding: 18px;
-
     background: #e9f7ec;
-
     border-radius: 10px;
-
     text-align: center;
-
     font-size: 22px;
-
     font-weight: bold;
-
     color: #087f23;
-
 }
-
-
 
 #total {
-
     color: #d35400;
-
 }
-
-
 
 .submit-button {
-
     width: 100%;
-
     margin-top: 25px;
-
     padding: 15px;
-
     background-color: #087f23;
-
     color: white;
-
     border: none;
-
     border-radius: 8px;
-
     font-size: 18px;
-
     cursor: pointer;
-
 }
-
-
 
 .submit-button:hover {
-
     background-color: #055d19;
-
 }
-
-
 
 .success-message {
-
     display: none;
-
     text-align: center;
-
     background: #e9f7ec;
-
     color: #087f23;
-
     padding: 25px;
-
     border-radius: 10px;
-
     font-size: 18px;
-
     font-weight: bold;
-
 }
-
 
 
 /* ================= VIDEO ================= */
 
 .main-video {
-
     width: 100%;
-
     max-width: 700px;
-
     border-radius: 12px;
-
     margin-top: 15px;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,0.20);
-
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
 }
 
 
+/* ================= TITLE VIDEO ================= */
 
-/* ================= FOOTER ================= */
+.title-video {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
-footer {
+.order-title-video {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 6px;
+}
 
-    background-color: #075c1a;
+.whatsapp-info-video {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 5px;
+}
 
-    color: white;
-
-    text-align: center;
-
-    padding: 25px;
-
+.whatsapp-video {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 
+/* ================= TYPING ANIMATION ================= */
 
-footer p {
-
-    font-size: 16px;
-
-}
-
-
-
-/* ================= TABLET ================= */
-
-@media (max-width: 800px) {
-
-    header {
-
-        flex-direction: column;
-
-        gap: 20px;
-
-    }
-
-
-
-    nav {
-
-        text-align: center;
-
-    }
-
-
-
-    nav a {
-
-        display: inline-block;
-
-        margin: 5px;
-
-    }
-
-
-
-    .hero h1 {
-
-        font-size: 38px;
-
-    }
-
-
-
-    .products {
-
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-}
-
-
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 500px) {
-
-    .products {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-
-    .hero-content {
-
-        padding: 25px;
-
-    }
-
-
-
-    .hero h1 {
-
-        font-size: 32px;
-
-    }
-
-
-
-    .order-box {
-
-        padding: 25px 18px;
-
-    }
-
-}
 .typing-text {
     font-size: 20px;
     line-height: 1.8;
@@ -709,73 +362,40 @@ footer p {
         opacity: 0;
     }
 }
+
+
+/* ================= PHONE ICON ================= */
+
 .phone-icon {
     display: inline-block;
     animation: phoneBounce 1s infinite;
 }
 
 @keyframes phoneBounce {
-
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0);
     }
 
     50% {
         transform: translateY(-10px);
     }
-
 }
+
+
+/* ================= EMAIL ICON ================= */
+
 .email-icon {
     display: inline-block;
     color: #EA4335;
     font-size: 24px;
     font-weight: bold;
 }
-.title-video {
-    width: 55px;
-    height: 55px;
-    object-fit: cover;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-.whatsapp-video {
-    width: 35px;
-    height: 35px;
-    object-fit: cover;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 8px;
-}
-.title-video {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-.order-title-video {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin: 0 6px;
-}
-.whatsapp-info-video {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin: 0 5px;
-}
-/* তোমার আগের CSS */
 
-.order-button {
-    transition: all 0.3s ease;
-}
+
+/* ================= PRODUCT BUTTON EFFECT ================= */
+
+/* মরিচ */
 .order-button {
     transition: 0.3s;
 }
@@ -784,6 +404,9 @@ footer p {
     box-shadow: 0 0 20px red;
     transform: scale(1.08);
 }
+
+
+/* পেঁয়াজ */
 .peyaj-button {
     transition: 0.3s;
 }
@@ -792,14 +415,20 @@ footer p {
     box-shadow: 0 0 20px purple;
     transform: scale(1.08);
 }
+
+
+/* রসুন */
 .roshun-button {
     transition: 0.3s;
 }
 
 .roshun-button:hover {
-    box-shadow: 0 0 20px white;
+    box-shadow: 0 0 20px blue;
     transform: scale(1.08);
 }
+
+
+/* আদা */
 .ada-button {
     transition: 0.3s;
 }
@@ -808,14 +437,86 @@ footer p {
     box-shadow: 0 0 20px orange;
     transform: scale(1.08);
 }
-.roshun-button {
-    transition: 0.3s;
-}
-.roshun-button {
-    transition: 0.3s;
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #075c1a;
+    color: white;
+    text-align: center;
+    padding: 25px;
 }
 
-.roshun-button:hover {
-    box-shadow: 0 0 20px blue;
-    transform: scale(1.08);
+footer p {
+    font-size: 16px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 500px) {
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .order-box {
+        padding: 25px 18px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .title-video {
+        width: 38px;
+        height: 38px;
+    }
+
+    .order-title-video {
+        width: 35px;
+        height: 35px;
+    }
+
+    .whatsapp-video {
+        width: 30px;
+        height: 30px;
+    }
 }
